@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: #1e40af; /* sininen sävy */
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+a {
+  @apply text-blue-700 underline;
+}
+
+.container {
+  @apply max-w-3xl mx-auto px-4;
+}
+
+.card {
+  @apply bg-white rounded-xl shadow p-4;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 border border-gray-300 hover:bg-gray-100;
+}
+
+.btn-primary {
+  @apply bg-blue-700 text-white border-blue-700 hover:bg-blue-800;
+}
+
+input, textarea, select {
+  @apply w-full border border-gray-300 rounded-lg px-3 py-2;
+}
+
+label {
+  @apply font-medium;
+}
+
+form > .field {
+  @apply mb-4;
+}
